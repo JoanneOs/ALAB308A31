@@ -44,3 +44,12 @@ getUserData(99)
 
   //The central() function threw this error because:
 //The assignment only allows IDs 1-10
+
+
+////verifying////
+// Should SUCCESS
+getUserData(5).then(console.log).catch(console.error); 
+
+// Should FAIL
+getUserData(0).then(console.log).catch(console.error);
+getUserData("abc").then(console.log).catch(console.error);
