@@ -7,3 +7,8 @@ export async function central(id) {
   if (id < 1 || id > 10) throw Error("Invalid ID");
   return id <= 4 ? "db1" : id <= 7 ? "db2" : "db3";
 }
+
+async function fakeFetch(data) {
+    await wait(100);
+    return data;
+  }
