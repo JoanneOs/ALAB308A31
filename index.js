@@ -11,3 +11,7 @@ async function getUserData(id) {
     throw Error(`Failed: ${e.message}`);
   }
 }
+
+// Test it
+getUserData(3).then(console.log).catch(console.error);
+getUserData(99).then(console.log).catch(console.error); // Will fail
