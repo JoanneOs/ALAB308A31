@@ -12,3 +12,8 @@ async function fakeFetch(data) {
     await wait(100);
     return data;
   }
+
+  export const db1 = id => fakeFetch({username: `user${id}`, website: `user${id}.com`});
+export const db2 = id => fakeFetch({username: `user${id}`, website: `user${id}.com`});
+export const db3 = id => fakeFetch({username: `user${id}`, website: `user${id}.com`});
+export const vault = id => fakeFetch({name: `User ${id}`, email: `user${id}@test.com`});
